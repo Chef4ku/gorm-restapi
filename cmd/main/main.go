@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/chefaku/gorm-restapi/pkg/env"
-	"github.com/chefaku/gorm-restapi/pkg/routes"
+	"github.com/chefaku/gorm-restapi/pkg/route"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -13,7 +13,7 @@ func main() {
 	// FIBER SERVER
 	app := fiber.New()
 
-	routes.RoutesHandler(app)
+	route.RouteHandler(app)
 
 	app.Listen(":3000")
 }

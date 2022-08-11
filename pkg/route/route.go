@@ -1,7 +1,7 @@
-package routes
+package route
 
 import "github.com/gofiber/fiber/v2"
 
-func RoutesHandler(app *fiber.App) {
+func RouteHandler(app *fiber.App) {
 	index(app)
 }
